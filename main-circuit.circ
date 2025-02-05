@@ -547,4 +547,46 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit7" val="0"/>
     </comp>
   </circuit>
+  <circuit name="Test Register">
+    <a name="circuit" val="Test Register"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(80,230)" to="(240,230)"/>
+    <wire from="(230,300)" to="(260,300)"/>
+    <wire from="(250,200)" to="(250,280)"/>
+    <wire from="(290,290)" to="(450,290)"/>
+    <wire from="(250,280)" to="(260,280)"/>
+    <wire from="(80,200)" to="(250,200)"/>
+    <wire from="(140,310)" to="(260,310)"/>
+    <wire from="(80,260)" to="(230,260)"/>
+    <wire from="(230,260)" to="(230,300)"/>
+    <wire from="(240,230)" to="(240,290)"/>
+    <wire from="(240,290)" to="(260,290)"/>
+    <comp lib="0" loc="(450,290)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Output"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(80,260)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clear"/>
+    </comp>
+    <comp lib="0" loc="(140,310)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Input"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(80,200)" name="Clock">
+      <a name="label" val="Clk"/>
+    </comp>
+    <comp lib="0" loc="(80,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Write En"/>
+    </comp>
+    <comp loc="(290,290)" name="8-bit register"/>
+  </circuit>
 </project>
