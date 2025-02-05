@@ -134,4 +134,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Enable"/>
     </comp>
   </circuit>
+  <circuit name="D FF">
+    <a name="circuit" val="D FF"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(180,250)" to="(180,300)"/>
+    <wire from="(300,240)" to="(390,240)"/>
+    <wire from="(260,250)" to="(270,250)"/>
+    <wire from="(250,300)" to="(260,300)"/>
+    <wire from="(260,250)" to="(260,300)"/>
+    <wire from="(130,240)" to="(200,240)"/>
+    <wire from="(230,240)" to="(270,240)"/>
+    <wire from="(130,300)" to="(180,300)"/>
+    <wire from="(180,300)" to="(230,300)"/>
+    <wire from="(180,250)" to="(200,250)"/>
+    <comp loc="(300,240)" name="D Latch"/>
+    <comp lib="0" loc="(130,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="1" loc="(250,300)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="0" loc="(390,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(230,240)" name="D Latch"/>
+    <comp lib="0" loc="(130,300)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clk"/>
+    </comp>
+  </circuit>
 </project>
