@@ -1309,4 +1309,56 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="B"/>
     </comp>
   </circuit>
+  <circuit name="Full-Adder">
+    <a name="circuit" val="Full-Adder"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(110,170)" to="(140,170)"/>
+    <wire from="(180,220)" to="(270,220)"/>
+    <wire from="(240,170)" to="(260,170)"/>
+    <wire from="(180,170)" to="(180,220)"/>
+    <wire from="(260,200)" to="(270,200)"/>
+    <wire from="(300,210)" to="(310,210)"/>
+    <wire from="(170,170)" to="(180,170)"/>
+    <wire from="(110,170)" to="(110,190)"/>
+    <wire from="(200,170)" to="(210,170)"/>
+    <wire from="(100,190)" to="(110,190)"/>
+    <wire from="(100,160)" to="(140,160)"/>
+    <wire from="(240,160)" to="(310,160)"/>
+    <wire from="(170,160)" to="(210,160)"/>
+    <wire from="(260,170)" to="(260,200)"/>
+    <wire from="(100,230)" to="(200,230)"/>
+    <wire from="(200,170)" to="(200,230)"/>
+    <comp loc="(170,160)" name="Half-Adder"/>
+    <comp lib="0" loc="(100,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(100,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(300,210)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(310,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Sum"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(310,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Carry"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(100,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Cin"/>
+    </comp>
+    <comp loc="(240,160)" name="Half-Adder"/>
+  </circuit>
 </project>
