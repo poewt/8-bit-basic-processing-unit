@@ -1,2 +1,2 @@
-# 8-bit-basic processing unit
+# ARM-like 16-bit CPU
  
